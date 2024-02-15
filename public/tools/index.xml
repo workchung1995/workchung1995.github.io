@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>emoji on MC Chung</title>
-    <link>https://example.com/tags/emoji/</link>
-    <description>Recent content in emoji on MC Chung</description>
+    <title>Tools on MC Chung</title>
+    <link>https://example.com/tools/</link>
+    <description>Recent content in Tools on MC Chung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 11 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.com/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.com/tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arrange Seat</title>
       <link>https://example.com/tools/arrangeseat/</link>
       <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://example.com/tools/arrangeseat/</guid>
       <description>&#xD;Choose your classroom&#xD;SS608&#xD;SS609&#xD;Choose a method&#xD;Method1&#xD;Submit&#xD;Print&#xD;</description>
-    </item>
-    <item>
-      <title>Emoji Support</title>
-      <link>https://example.com/posts/emoji-support/</link>
-      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://example.com/posts/emoji-support/</guid>
-      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

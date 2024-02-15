@@ -150,9 +150,29 @@
   </url><url>
     <loc>https://example.com/tw/tools/</loc>
     <lastmod>2024-02-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/tools/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://example.com/tw/tools/"
+                />
   </url><url>
     <loc>https://example.com/tw/tools/arrangeseat/</loc>
     <lastmod>2024-02-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/tools/arrangeseat/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://example.com/tw/tools/arrangeseat/"
+                />
   </url><url>
     <loc>https://example.com/tw/categories/demonstra%C3%A7%C3%A3o-do-tema/</loc>
     <lastmod>2023-07-07T00:00:00+00:00</lastmod>
