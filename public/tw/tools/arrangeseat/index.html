@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+  <title>
+  安排座位 · MC Chung
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="MC Chung">
+<meta name="description" content="Guide to emoji usage in Hugo">
+<meta name="keywords" content="blog,desenvolvedor,pessoal">
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="安排座位"/>
+<meta name="twitter:description" content="Guide to emoji usage in Hugo"/>
+
+<meta property="og:title" content="安排座位" />
+<meta property="og:description" content="Guide to emoji usage in Hugo" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/tw/tools/arrangeseat/" /><meta property="article:section" content="tools" />
+<meta property="article:published_time" content="2024-02-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-02-11T00:00:00+00:00" />
+
+
+
+
+
+
+
+<link rel="canonical" href="https://example.com/tw/tools/arrangeseat/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.fa74189526e858f964d89230d76de3b1dd7aa7d5e112c726978c80a47e8d34f5.css" integrity="sha256-&#43;nQYlSboWPlk2JIw123jsd16p9XhEscml4yApH6NNPU=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/tw">
+      MC Chung
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/tw/about/">關於我</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/tw/posts/">貼文</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/tw/tools/">工具</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/tw/resource/">資源</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/">En</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="https://example.com/tw/tools/arrangeseat/">
+          安排座位
+        </a>
+      </h1>
+    </header>
+
+    
+<form id="info">
+    <div>
+        <input type="file" id="studentList" accept=".xlsx, .csv" required />
+    </div>
+    <div style="margin-top: 20px;">
+        <select name="classroom" id="classroom" required>
+            <option value="" disabled selected="selected">請選擇一間教室</option>
+            <option value="SS608">SS608</option>
+            <option value="SS609">SS609</option>
+        </select>
+    </div>
+    <div style="margin-top: 20px;">
+        <select name="method" id="method" required>
+            <option value="" disabled selected="selected">請選擇一種排法</option>
+            <option value="method1">方法一</option>
+            <!-- <option value="method2">class</option> -->
+        </select>
+    </div>
+    <div style="margin-top: 20px;">
+        <button type="submit">送出</button>
+        <button type="button" id="printBtn" style="display: none;" onclick="printTable()">列印</button>
+    </div>
+
+    <div id="printElement" style="display: none;">
+        <div class="seat">
+            <table id="table1">
+            </table>
+        </div>
+    </div>
+</form>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.fonts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.1/jspdf.plugin.autotable.min.js"></script>
+<script>
+    document.getElementById('info').addEventListener('submit', function (event) {
+        event.preventDefault()
+        submit()
+    });
+
+    var numberOfStudents = 0;
+
+    function submit() {
+        var studentList = document.getElementById('studentList').files[0]
+        var reader = new FileReader()
+
+        reader.onload = function (file) {
+            var data = new Uint8Array(file.target.result)
+            var workbook = XLSX.read(data, { type: 'array' })
+            var sheet_name = workbook.SheetNames[0]
+            var sheet = workbook.Sheets[sheet_name]
+            jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 })
+            var studentNames = []
+            for (var i = 1; i < jsonData.length; i++) {
+                studentNames.push(jsonData[i][4].split(" ")[0])
+            }
+            dataProcess(studentNames)
+        }
+
+        reader.readAsArrayBuffer(studentList);
+    }
+
+    function dataProcess(studentNames) {
+        numberOfStudents = studentNames.length
+        var sampleNames = sample(studentNames, studentNames.length)
+        var classroom = getClassroom();
+
+        var result;
+        var method = document.getElementById('method').value;
+        switch (method) {
+            case 'method1':
+                result = method1(sampleNames, classroom)
+                break;
+            case 'method2':
+                result = method1(sampleNames, classroom)
+                break;
+            default:
+                break;
+        }
+
+
+        console.log(result)
+
+        createTable(result)
+
+        var printBtn = document.getElementById('printBtn');
+        printBtn.style.display = '';
+    }
+
+    function sample(array, size) {
+        const results = [],
+            sampled = {};
+        while (results.length < size && results.length < array.length) {
+            const index = Math.trunc(Math.random() * array.length);
+            if (!sampled[index]) {
+                results.push(array[index]);
+                sampled[index] = true;
+            }
+        }
+        return results;
+    }
+
+    function getClassroom() {
+        const classroom = document.getElementById('classroom').value;
+        switch (classroom) {
+            case 'SS608':
+                return SS608;
+            case 'SS609':
+                return SS609;
+            default: return null;
+        }
+    }
+
+    function method1(sampleNames, classroom) {
+        var i = 0
+        for (var j = 0; j < classroom.length; j++) {
+            for (var k = 0; k < classroom[j].length; k++) {
+                if (classroom[j][k] === "S") {
+                    classroom[j][k] = (i < sampleNames.length) ? sampleNames[i] : "";
+                    i++
+                } else {
+                    continue
+                }
+            }
+        }
+
+        return classroom;
+    }
+
+    function createTable(tableData) {
+        var table = document.getElementById('table1');
+        var tableBody = document.createElement('tbody');
+
+        tableData.forEach(function (rowData, rIndex) {
+            var row = document.createElement('tr');
+
+            rowData.forEach(function (cellData, cIndex) {
+                var cell = document.createElement('td');
+                if (cellData === "AA")
+                    cell.classList.add('aisle');
+                if (rIndex == 0 || cIndex == 0)
+                    cell.classList.add('index');
+                cell.appendChild(document.createTextNode(cellData));
+                row.appendChild(cell);
+            });
+
+            tableBody.appendChild(row);
+        });
+
+        table.replaceChildren(tableBody);
+    }
+
+    function printTable() {
+        var table = document.getElementById('table1');
+        var divContents = document.getElementById("printElement").innerHTML;
+        var a = window.open('', '', 'height=500, width=500');
+        a.document.write('<html><head>');
+        a.document.write('<style type="text/css" media="print">tr, td, th {  -webkit-print-color-adjust: exact; -moz-print-color-adjust: exact; }</style>');
+        a.document.write('<style type="text/css" media="print">@page { size: landscape; }</style>');
+        a.document.write('<style>body, table {font-size: 20px;}</style > ');
+        a.document.write('<style>td, th {border: 1px solid black;text-align: center;padding: 8px;}</style > ');
+        a.document.write('<style>tr:nth-child(even) {background-color: #d4d4d4;}</style > ');
+        a.document.write('<style>.seat {justify-content: center;display: flex;}</style > ');
+        a.document.write('<style>.aisle {color: transparent; border: 1px solid white;background-color: white;}</style > ');
+        a.document.write('<style>.index {border: 1px solid white;background-color: white;}</style > ');
+        a.document.write('</head>');
+        a.document.write('<body>');
+        a.document.write('<div style="text-align:right; padding-right: 30px;">教室: ' + document.getElementById('classroom').value + '</div><br>');
+        a.document.write('<div style="text-align:center;"><h1>黑板</h1> </div><br>');
+        a.document.write(divContents);
+        a.document.write('<br><br><div style="text-align:left; padding-left: 30px;">應到人數: ' + numberOfStudents + '</div><br>');
+        a.document.write('<div style="text-align:left; padding-left: 30px;">實到人數: </div>');
+        a.document.write('</body></html>');
+        a.document.close();
+        a.print();
+    }
+
+    // --------------------------------------------------------
+    var SS608 = [[" ", 1, 2, "AA", 3, 4, "AA", 5, 6, "AA", 7, 8],
+    [1, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
+    [2, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
+    [3, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
+    [4, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
+    [5, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"]]
+
+    var SS609 = [[" ", 1, 2, "AA", 3, 4, "AA", 5, 6, "AA", 7, 8],
+    [1, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
+    [2, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
+    [3, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
+    [4, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
+    [5, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"]]
+
+</script>
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2024
+     MC Chung 
+    ·
+    
+    技術支援 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

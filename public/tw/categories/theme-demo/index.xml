@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>theme demo on MC Chung</title>
+    <link>https://example.com/tw/categories/theme-demo/</link>
+    <description>Recent content in theme demo on MC Chung</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tw</language>
+    <lastBuildDate>Sun, 11 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.com/tw/categories/theme-demo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>安排座位</title>
+      <link>https://example.com/tw/tools/arrangeseat/</link>
+      <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tw/tools/arrangeseat/</guid>
+      <description>&#xD;請選擇一間教室&#xD;SS608&#xD;SS609&#xD;請選擇一種排法&#xD;方法一&#xD;送出&#xD;列印&#xD;</description>
+    </item>
+  </channel>
+</rss>
