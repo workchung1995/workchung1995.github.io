@@ -22,19 +22,5 @@
       <guid>https://example.com/tw/categories/theme-demo/</guid>
       <description></description>
     </item>
-    <item>
-      <title>demonstração do tema</title>
-      <link>https://example.com/tw/categories/demonstra%C3%A7%C3%A3o-do-tema/</link>
-      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://example.com/tw/categories/demonstra%C3%A7%C3%A3o-do-tema/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>sintaxe</title>
-      <link>https://example.com/tw/categories/sintaxe/</link>
-      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://example.com/tw/categories/sintaxe/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>

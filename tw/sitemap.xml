@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://example.com/tw/authors/</loc>
-    <lastmod>2024-02-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-02-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -13,6 +13,74 @@
                 rel="alternate"
                 hreflang="tw"
                 href="https://example.com/tw/authors/"
+                />
+  </url><url>
+    <loc>https://example.com/tw/authors/mc-chung/</loc>
+    <lastmod>2024-02-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/authors/mc-chung/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://example.com/tw/authors/mc-chung/"
+                />
+  </url><url>
+    <loc>https://example.com/tw/</loc>
+    <lastmod>2024-02-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://example.com/tw/"
+                />
+  </url><url>
+    <loc>https://example.com/tw/posts/</loc>
+    <lastmod>2024-02-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://example.com/tw/posts/"
+                />
+  </url><url>
+    <loc>https://example.com/tw/series/</loc>
+    <lastmod>2024-02-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://example.com/tw/series/"
+                />
+  </url><url>
+    <loc>https://example.com/tw/series/%E5%AF%A6%E7%BF%92%E8%AA%B2/</loc>
+    <lastmod>2024-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/tw/posts/econometrics/</loc>
+    <lastmod>2024-02-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/posts/econometrics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://example.com/tw/posts/econometrics/"
                 />
   </url><url>
     <loc>https://example.com/tw/categories/</loc>
@@ -54,19 +122,6 @@
                 href="https://example.com/tw/tags/hugo/"
                 />
   </url><url>
-    <loc>https://example.com/tw/authors/lone-coder/</loc>
-    <lastmod>2024-02-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/authors/lone-coder/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://example.com/tw/authors/lone-coder/"
-                />
-  </url><url>
     <loc>https://example.com/tw/tags/markdown/</loc>
     <lastmod>2024-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -78,32 +133,6 @@
                 rel="alternate"
                 hreflang="tw"
                 href="https://example.com/tw/tags/markdown/"
-                />
-  </url><url>
-    <loc>https://example.com/tw/</loc>
-    <lastmod>2024-02-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://example.com/tw/"
-                />
-  </url><url>
-    <loc>https://example.com/tw/series/</loc>
-    <lastmod>2024-02-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://example.com/tw/series/"
                 />
   </url><url>
     <loc>https://example.com/tw/categories/syntax/</loc>
@@ -174,84 +203,6 @@
                 href="https://example.com/tw/tools/arrangeseat/"
                 />
   </url><url>
-    <loc>https://example.com/tw/categories/demonstra%C3%A7%C3%A3o-do-tema/</loc>
-    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/categories/demonstra%C3%A7%C3%A3o-do-tema/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://example.com/tw/categories/demonstra%C3%A7%C3%A3o-do-tema/"
-                />
-  </url><url>
-    <loc>https://example.com/tw/series/demonstra%C3%A7%C3%A3o-do-tema/</loc>
-    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/series/demonstra%C3%A7%C3%A3o-do-tema/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://example.com/tw/series/demonstra%C3%A7%C3%A3o-do-tema/"
-                />
-  </url><url>
-    <loc>https://example.com/tw/posts/</loc>
-    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://example.com/tw/posts/"
-                />
-  </url><url>
-    <loc>https://example.com/tw/authors/programador-solit%C3%A1rio/</loc>
-    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/authors/programador-solit%C3%A1rio/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://example.com/tw/authors/programador-solit%C3%A1rio/"
-                />
-  </url><url>
-    <loc>https://example.com/tw/categories/sintaxe/</loc>
-    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/categories/sintaxe/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://example.com/tw/categories/sintaxe/"
-                />
-  </url><url>
-    <loc>https://example.com/tw/posts/emoji-support/</loc>
-    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/posts/emoji-support/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://example.com/tw/posts/emoji-support/"
-                />
-  </url><url>
     <loc>https://example.com/tw/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -275,30 +226,6 @@
                 rel="alternate"
                 hreflang="tw"
                 href="https://example.com/tw/contact/"
-                />
-  </url><url>
-    <loc>https://example.com/tw/projects/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/projects/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://example.com/tw/projects/"
-                />
-  </url><url>
-    <loc>https://example.com/tw/resource/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/resource/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://example.com/tw/resource/"
                 />
   </url>
 </urlset>
