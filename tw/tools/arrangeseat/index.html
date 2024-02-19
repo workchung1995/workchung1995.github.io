@@ -170,6 +170,7 @@
     <div style="margin-top: 20px;">
         <select name="classroom" id="classroom" required>
             <option value="" disabled selected="selected">請選擇一間教室</option>
+            <option value="SS606">SS606</option>
             <option value="SS607">SS607</option>
             <option value="SS608">SS608</option>
             <option value="SS609">SS609</option>
@@ -269,6 +270,8 @@
     function getClassroom() {
         const classroom = document.getElementById('classroom').value;
         switch (classroom) {
+            case 'SS606':
+                return SS606;
             case 'SS607':
                 return SS607;
             case 'SS608':
@@ -344,12 +347,19 @@
     }
 
     // --------------------------------------------------------
+    var SS606 = [[" ", 1, 2, "AA", 3, 4, "AA", 5, 6, "AA", 7, 8],
+    [1, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
+    [2, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
+    [3, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
+    [4, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
+    [5, "S", "S", "AA", "S", "S", "AA", "S", "S"]]
+
     var SS607 = [[" ", 1, 2, "AA", 3, 4, "AA", 5, 6, "AA", 7, 8],
     [1, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
     [2, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
     [3, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
     [4, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
-    [5, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"]]
+    [5, "S", "S", "AA", "S", "S", "AA", "S", "S"]]
     
     var SS608 = [[" ", 1, 2, "AA", 3, 4, "AA", 5, 6, "AA", 7, 8],
     [1, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],

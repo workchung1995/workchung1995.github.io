@@ -170,6 +170,7 @@
     <div style="margin-top: 20px;">
         <select name="classroom" id="classroom" required>
             <option value="" disabled selected="selected">Choose your classroom</option>
+            <option value="SS606">SS606</option>
             <option value="SS607">SS607</option>
             <option value="SS608">SS608</option>
             <option value="SS609">SS609</option>
@@ -269,6 +270,8 @@
     function getClassroom() {
         const classroom = document.getElementById('classroom').value;
         switch (classroom) {
+            case 'SS606':
+                return SS606;
             case 'SS607':
                 return SS607;
             case 'SS608':
@@ -333,8 +336,8 @@
         a.document.write('<style>.index {border: 1px solid white;background-color: white;}</style > ');
         a.document.write('</head>');
         a.document.write('<body>');
-        a.document.write('<div style="text-align:right; padding-right: 30px;">教室: ' + document.getElementById('classroom').value + '</div><br>');
-        a.document.write('<div style="text-align:center;"><h1>黑板</h1> </div><br>');
+        a.document.write('<div style="text-align:right; padding-right: 30px;">Classroom: ' + document.getElementById('classroom').value + '</div><br>');
+        a.document.write('<div style="text-align:center;"><h1>Blackboard</h1> </div><br>');
         a.document.write(divContents);
         a.document.write('<br><br><div style="text-align:left; padding-left: 30px;">應到人數: ' + numberOfStudents + '</div><br>');
         a.document.write('<div style="text-align:left; padding-left: 30px;">實到人數: </div>');
@@ -344,12 +347,19 @@
     }
 
     // --------------------------------------------------------
+    var SS606 = [[" ", 1, 2, "AA", 3, 4, "AA", 5, 6, "AA", 7, 8],
+    [1, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
+    [2, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
+    [3, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
+    [4, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
+    [5, "S", "S", "AA", "S", "S", "AA", "S", "S"]]
+
     var SS607 = [[" ", 1, 2, "AA", 3, 4, "AA", 5, 6, "AA", 7, 8],
     [1, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
     [2, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
     [3, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
     [4, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
-    [5, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"]]
+    [5, "S", "S", "AA", "S", "S", "AA", "S", "S"]]
 
     var SS608 = [[" ", 1, 2, "AA", 3, 4, "AA", 5, 6, "AA", 7, 8],
     [1, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
