@@ -6,29 +6,8 @@
     <description>Recent content in Tags on MC Chung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 11 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Jan 2023 11:51:36 +0100</lastBuildDate>
     <atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>emoji</title>
-      <link>https://example.com/tags/emoji/</link>
-      <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.com/tags/emoji/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>hugo</title>
-      <link>https://example.com/tags/hugo/</link>
-      <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.com/tags/hugo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>markdown</title>
-      <link>https://example.com/tags/markdown/</link>
-      <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.com/tags/markdown/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Códigos curtos</title>
       <link>https://example.com/tags/shortcodes/_index.pt-br/</link>

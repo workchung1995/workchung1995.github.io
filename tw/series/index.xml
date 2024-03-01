@@ -15,12 +15,5 @@
       <guid>https://example.com/tw/series/%E5%AF%A6%E7%BF%92%E8%AA%B2/</guid>
       <description></description>
     </item>
-    <item>
-      <title>Theme Demo</title>
-      <link>https://example.com/tw/series/theme-demo/</link>
-      <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.com/tw/series/theme-demo/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>

@@ -83,100 +83,6 @@
                 href="https://example.com/tw/posts/econometrics/"
                 />
   </url><url>
-    <loc>https://example.com/tw/categories/</loc>
-    <lastmod>2024-02-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://example.com/tw/categories/"
-                />
-  </url><url>
-    <loc>https://example.com/tw/tags/emoji/</loc>
-    <lastmod>2024-02-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/tags/emoji/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://example.com/tw/tags/emoji/"
-                />
-  </url><url>
-    <loc>https://example.com/tw/tags/hugo/</loc>
-    <lastmod>2024-02-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/tags/hugo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://example.com/tw/tags/hugo/"
-                />
-  </url><url>
-    <loc>https://example.com/tw/tags/markdown/</loc>
-    <lastmod>2024-02-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/tags/markdown/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://example.com/tw/tags/markdown/"
-                />
-  </url><url>
-    <loc>https://example.com/tw/categories/syntax/</loc>
-    <lastmod>2024-02-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/tw/tags/</loc>
-    <lastmod>2024-02-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://example.com/tw/tags/"
-                />
-  </url><url>
-    <loc>https://example.com/tw/categories/theme-demo/</loc>
-    <lastmod>2024-02-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/categories/theme-demo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://example.com/tw/categories/theme-demo/"
-                />
-  </url><url>
-    <loc>https://example.com/tw/series/theme-demo/</loc>
-    <lastmod>2024-02-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/series/theme-demo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://example.com/tw/series/theme-demo/"
-                />
-  </url><url>
     <loc>https://example.com/tw/tools/</loc>
     <lastmod>2024-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -214,6 +120,30 @@
                 rel="alternate"
                 hreflang="tw"
                 href="https://example.com/tw/about/"
+                />
+  </url><url>
+    <loc>https://example.com/tw/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://example.com/tw/categories/"
+                />
+  </url><url>
+    <loc>https://example.com/tw/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://example.com/tw/tags/"
                 />
   </url><url>
     <loc>https://example.com/tw/contact/</loc>
