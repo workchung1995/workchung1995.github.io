@@ -13,14 +13,14 @@
 
 
 <meta name="author" content="MC Chung">
-<meta name="description" content="Guide to emoji usage in Hugo">
+<meta name="description" content="請直接上傳由 NTU COOL 上下載的學生名單請選擇一間教室請選擇一種排法方法一送出列印">
 <meta name="keywords" content="blog,desenvolvedor,pessoal">
 
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="安排座位"/>
-<meta name="twitter:description" content="Guide to emoji usage in Hugo"/>
+<meta name="twitter:description" content="請直接上傳由 NTU COOL 上下載的學生名單請選擇一間教室請選擇一種排法方法一送出列印"/>
 
 <meta property="og:title" content="安排座位" />
-<meta property="og:description" content="Guide to emoji usage in Hugo" />
+<meta property="og:description" content="請直接上傳由 NTU COOL 上下載的學生名單請選擇一間教室請選擇一種排法方法一送出列印" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.com/tw/tools/arrangeseat/" /><meta property="article:section" content="tools" />
 <meta property="article:published_time" content="2024-02-11T00:00:00+00:00" />
@@ -174,31 +174,6 @@
     <div style="margin-top: 20px;">
         <select name="classroom" id="classroom" required>
             <option value="" disabled selected="selected">請選擇一間教室</option>
-            <option value="" disabled>---------- 2F ----------</option>
-            <option value="SS202">SS202</option>
-            <option value="" disabled>---------- 3F ----------</option>
-            <option value="SS301">SS301</option>
-            <option value="SS302">SS302</option>
-            <option value="SS303">SS303</option>
-            <option value="SS305">SS305</option>
-            <option value="SS307">SS307</option>
-            <option value="" disabled>---------- 4F ----------</option>
-            <option value="SS404">SS401</option>
-            <option value="SS402">SS402</option>
-            <option value="SS403">SS403</option>
-            <option value="SS404">SS404</option>
-            <option value="SS405">SS405</option>
-            <option value="SS406">SS406</option>
-            <option value="SS407">SS407</option>
-            <option value="" disabled>---------- 5F ----------</option>
-            <option value="SS502">SS502</option>
-            <option value="SS506">SS506</option>
-            <option value="SS507">SS507</option>
-            <option value="" disabled>---------- 6F ----------</option>
-            <option value="SS606">SS606</option>
-            <option value="SS607">SS607</option>
-            <option value="SS608">SS608</option>
-            <option value="SS609">SS609</option>
         </select>
     </div>
     <div style="margin-top: 20px;">
@@ -220,6 +195,7 @@
         </div>
     </div>
 </form>
+<script src="/js/arrangeSeat.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.fonts.js"></script>
@@ -229,7 +205,7 @@
         event.preventDefault()
         submit()
     });
-
+    addOptions();
     var numberOfStudents = 0;
 
     function submit() {
@@ -279,82 +255,6 @@
         printBtn.style.display = '';
     }
 
-    function sample(array, size) {
-        const results = [],
-            sampled = {};
-        while (results.length < size && results.length < array.length) {
-            const index = Math.trunc(Math.random() * array.length);
-            if (!sampled[index]) {
-                results.push(array[index]);
-                sampled[index] = true;
-            }
-        }
-        return results;
-    }
-
-    function getClassroom() {
-        const classroom = document.getElementById('classroom').value;
-        switch (classroom) {
-            case 'SS202':
-                return SS202;
-            case 'SS301':
-                return SS301;
-            case 'SS302':
-                return SS302;
-            case 'SS303':
-                return SS303;
-            case 'SS305':
-                return SS305;
-            case 'SS307':
-                return SS307;
-            case 'SS401':
-                return SS401;
-            case 'SS402':
-                return SS402;
-            case 'SS403':
-                return SS403;
-            case 'SS404':
-                return SS404;
-            case 'SS405':
-                return SS405;
-            case 'SS406':
-                return SS406;
-            case 'SS407':
-                return SS407;
-            case 'SS502':
-                return SS502;
-            case 'SS506':
-                return SS506;
-            case 'SS507':
-                return SS507;
-            case 'SS606':
-                return SS606;
-            case 'SS607':
-                return SS607;
-            case 'SS608':
-                return SS608;
-            case 'SS609':
-                return SS609;
-            default: return null;
-        }
-    }
-
-    function method1(sampleNames, classroom) {
-        var i = 0
-        for (var j = 0; j < classroom.length; j++) {
-            for (var k = 0; k < classroom[j].length; k++) {
-                if (classroom[j][k] === "S") {
-                    classroom[j][k] = (i < sampleNames.length) ? sampleNames[i] : "";
-                    i++
-                } else {
-                    continue
-                }
-            }
-        }
-
-        return classroom;
-    }
-
     function createTable(tableData) {
         var table = document.getElementById('table1');
         var tableBody = document.createElement('tbody');
@@ -378,94 +278,8 @@
         table.replaceChildren(tableBody);
     }
 
-    function printTable() {
-        var table = document.getElementById('table1');
-        var divContents = document.getElementById("printElement").innerHTML;
-        var a = window.open('', '', 'height=500, width=500');
-        a.document.write('<html><head>');
-        a.document.write('<style type="text/css" media="print">tr, td, th {  -webkit-print-color-adjust: exact; -moz-print-color-adjust: exact; }</style>');
-        a.document.write('<style type="text/css" media="print">@page { size: landscape; }</style>');
-        a.document.write('<style>body, table {font-size: 20px;}</style > ');
-        a.document.write('<style>td, th {border: 1px solid black;text-align: center;padding: 8px;}</style > ');
-        a.document.write('<style>tr:nth-child(even) {background-color: #d4d4d4;}</style > ');
-        a.document.write('<style>.seat {justify-content: center;display: flex;}</style > ');
-        a.document.write('<style>.aisle {color: transparent; border: 1px solid white;background-color: white;}</style > ');
-        a.document.write('<style>.index {border: 1px solid white;background-color: white;}</style > ');
-        a.document.write('</head>');
-        a.document.write('<body>');
-        a.document.write('<div style="text-align:right; padding-right: 30px;">教室: ' + document.getElementById('classroom').value + '</div><br>');
-        a.document.write('<div style="text-align:center;"><h1>黑板</h1> </div><br>');
-        a.document.write(divContents);
-        a.document.write('<br><br><div style="text-align:left; padding-left: 30px;">應到人數: ' + numberOfStudents + '</div><br>');
-        a.document.write('<div style="text-align:left; padding-left: 30px;">實到人數: </div>');
-        a.document.write('</body></html>');
-        a.document.close();
-        a.print();
-    }
-
-    // --------------------------------------------------------
-    var SS301, SS302, SS401, SS402
-    SS301 = SS302 = SS401 = SS402 =
-    [[" ", 1, "AA" ,2, "AA", 3, "AA", 4, "AA", 5, "AA", 6, "AA", 7],
-    [1, "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S"],
-    [2, "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S"],
-    [3, "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S"],
-    [4, "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S"],
-    [5, "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S"],
-    [6, "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S"]]
-
-    var SS305, SS307
-    SS305 = SS307 = 
-    [[" ", 1, 2, "AA", 3, 4, "AA", 5, 6, "AA", 7, 8],
-    [1, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
-    [2, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
-    [3, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
-    [4, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
-    [5, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
-    [6, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
-    [7, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
-    [8, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"]]
-
-    var SS404, SS405, SS406, SS407, SS506, SS507
-    SS404 = SS405 = SS406 = SS407 = SS506 = SS507 = 
-    [[" ", 1, "AA" ,2, "AA", 3, "AA", 4, "AA", 5, "AA", 6, "AA", 7],
-    [1, "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S"],
-    [2, "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S"],
-    [3, "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S"],
-    [4, "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S"],
-    [5, "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S"],
-    [6, "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S"],
-    [7, "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S"],
-    [8, "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S", "AA", "S"]]
-
-    var SS606, SS607, SS608, SS609 
-    SS606 = SS607 = SS608 = SS609 =
-    [[" ", 1, 2, "AA", 3, 4, "AA", 5, 6, "AA", 7, 8],
-    [1, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
-    [2, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
-    [3, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
-    [4, "S", "S", "AA", "S", "S", "AA", "S", "S", "AA", "S", "S"],
-    [5, "S", "S", "AA", "S", "S", "AA", "S", "S"]]
-
-    var SS202, SS303, SS402, SS502 
-    SS202 = SS303 = SS402 = SS502 =
-    [[" ", 1, 2, "AA", 3, 4, 5, 6, 7, 8, "AA", 9, 10, ],
-    [1, "S", "S", "AA", "S", "S", "S", "S", "S", "S", "AA", "S", "S"],
-    [2, "S", "S", "AA", "S", "S", "S", "S", "S", "S", "AA", "S", "AA"],
-    [3, "S", "S", "AA", "S", "S", "S", "S", "S", "S", "AA", "S", "S"],
-    [4, "S", "S", "AA", "S", "S", "S", "S", "S", "S", "AA", "S", "S"],
-    [5, "S", "S", "AA", "S", "S", "S", "S", "S", "S", "AA", "S", "S"],
-    [6, "S", "S", "AA", "S", "S", "S", "S", "S", "S", "AA", "S", "AA"],
-    [7, "AA", "S", "AA", "S", "S", "S", "S", "S", "S", "AA", "S", "AA"],
-    [8, "S", "S", "AA", "S", "S", "S", "S", "S", "S", "AA", "S", "S"],
-    [9, "S", "S", "AA", "S", "S", "S", "S", "S", "S", "AA", "S", "S"],
-    [10, "S", "S", "AA", "S", "S", "S", "S", "S", "S", "AA", "S", "S"],
-    [11, "S", "S", "AA", "S", "S", "S", "S", "S", "S", "AA", "S", "AA"],
-    [12, "S", "S", "AA", "S", "S", "S", "S", "S", "S", "AA", "S", "AA"],
-    [13, "S", "S", "AA", "S", "S", "S", "S", "S", "S", "AA", "S", "S"],
-    [14, "S", "S", "AA", "S", "S", "S", "S", "S", "S", "AA", "S", "S"],
-    [15, "AA", "AA", "AA", "S", "S", "S", "S", "S", "S", "AA", "AA", "AA"]]
     
+
 </script>
   </article>
 </section>
