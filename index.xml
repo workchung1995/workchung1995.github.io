@@ -6,8 +6,15 @@
     <description>Recent content on MC Chung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 16 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jul 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Monty Hall Problem</title>
+      <link>https://example.com/tools/montyhall/</link>
+      <pubDate>Wed, 10 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tools/montyhall/</guid>
+      <description>Suppose you&#39;re on a game show, and you&#39;re given the choice of three doors: Behind one door is a car; behind the&#xD;others, goats. You pick a door, say No. 1, and the host, who knows what&#39;s behind the doors, opens another door, say&#xD;No. 3, which has a goat. He then says to you, &#34;Do you want to pick door No. 2?&#34;&#xD;Is it to your advantage to switch your choice?</description>
+    </item>
     <item>
       <title>Econometrics</title>
       <link>https://example.com/posts/econometrics/</link>

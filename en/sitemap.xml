@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://example.com/authors/</loc>
-    <lastmod>2024-02-16T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
@@ -13,6 +13,48 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://example.com/authors/"
+                />
+  </url><url>
+    <loc>https://example.com/authors/mc-chung/</loc>
+    <lastmod>2024-07-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://example.com/tw/authors/mc-chung/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/authors/mc-chung/"
+                />
+  </url><url>
+    <loc>https://example.com/</loc>
+    <lastmod>2024-07-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://example.com/tw/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/"
+                />
+  </url><url>
+    <loc>https://example.com/tools/montyhall/</loc>
+    <lastmod>2024-07-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/tools/</loc>
+    <lastmod>2024-07-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://example.com/tw/tools/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/tools/"
                 />
   </url><url>
     <loc>https://example.com/posts/econometrics/</loc>
@@ -26,32 +68,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://example.com/posts/econometrics/"
-                />
-  </url><url>
-    <loc>https://example.com/authors/mc-chung/</loc>
-    <lastmod>2024-02-16T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://example.com/tw/authors/mc-chung/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/authors/mc-chung/"
-                />
-  </url><url>
-    <loc>https://example.com/</loc>
-    <lastmod>2024-02-16T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://example.com/tw/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/"
                 />
   </url><url>
     <loc>https://example.com/posts/</loc>
@@ -78,19 +94,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://example.com/tools/arrangeseat/"
-                />
-  </url><url>
-    <loc>https://example.com/tools/</loc>
-    <lastmod>2024-02-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://example.com/tw/tools/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/tools/"
                 />
   </url><url>
     <loc>https://example.com/authors/hugo-authors/</loc>
