@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=54831&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  Heads or tails? · MC Chung
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="MC Chung">
+<meta name="description" content="
+
+
+
+    Press start to flip the coin.
+    
+         If it lands heads up, you give me 10 dollars.
+         If it lands tails up, I will give you 10 dollars.
+    
+
+
+
+
+    
+        
+            
+                
+            
+            
+                
+            
+        
+    
+
+    Flip Coin
+
+
+
+">
+<meta name="keywords" content="blog,developer,personal">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Heads or tails?">
+  <meta name="twitter:description" content="Press start to flip the coin.If it lands heads up, you give me 10 dollars.If it lands tails up, I will give you 10 dollars.Flip Coin">
+
+<meta property="og:url" content="http://localhost:54831/tools/unfaircoin/">
+  <meta property="og:site_name" content="MC Chung">
+  <meta property="og:title" content="Heads or tails?">
+  <meta property="og:description" content="Press start to flip the coin.If it lands heads up, you give me 10 dollars.If it lands tails up, I will give you 10 dollars.Flip Coin">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="tools">
+    <meta property="article:published_time" content="2025-09-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-09-30T00:00:00+00:00">
+
+
+
+
+<link rel="canonical" href="http://localhost:54831/tools/unfaircoin/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      MC Chung
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Post</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/tools/">Tools</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/tw/">中文</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://localhost:54831/tools/unfaircoin/">
+          Heads or tails?
+        </a>
+      </h1>
+    </header>
+
+    
+<style>
+    .game-container {
+        text-align: center;
+        padding: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .coin-container {
+        margin: 40px 0;
+        perspective: 1000px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .coin {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform ease-out;
+    }
+
+    .coin-face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .coin-face img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .coin-heads {
+        transform: rotateY(0deg);
+    }
+
+    .coin-tails {
+        transform: rotateY(180deg);
+    }
+
+    .flip-animation {
+        animation: flip ease-out;
+    }
+
+    @keyframes flip {
+        0% { transform: rotateY(0deg); }
+        100% { transform: rotateY(1800deg); }
+    }
+
+    .game-button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .game-button:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+    }
+</style>
+
+
+<div>
+    Press start to flip the coin.
+    <ul>
+        <li> If it lands heads up, you give me 10 dollars.</li>
+        <li> If it lands tails up, I will give you 10 dollars.</li>
+    </ul>
+</div>
+
+<div class="game-container">
+
+    <div class="coin-container">
+        <div id="coin" class="coin">
+            <div class="coin-face coin-heads">
+                <img src="/images/coin-head.png" width="150" height="150" alt="Coin Head">
+            </div>
+            <div class="coin-face coin-tails">
+                <img src="/images/coin-tail.png" width="150" height="150" alt="Coin Tail">
+            </div>
+        </div>
+    </div>
+
+    <button id="flipButton" class="game-button" onclick="flipCoin()">Flip Coin</button>
+
+</div>
+
+<script>
+    let isFlipping = false;
+
+    function flipCoin() {
+        if (isFlipping) return;
+        
+        isFlipping = true;
+        const flipButton = document.getElementById('flipButton');
+        const coin = document.getElementById('coin');
+        
+        flipButton.disabled = true;
+        flipButton.textContent = 'Flipping...';
+        
+        // 隨機翻轉時間 3-7 秒
+        const flipDuration = Math.random() * 4000 + 3000; // 3000-7000ms
+        
+        // 決定結果 (90% 正面, 10% 背面)
+        const isHeads = Math.random() < 0.9;
+        
+        // 計算最終角度
+        const baseRotations = 5; // 基本翻轉次數
+        const extraRotations = Math.floor(Math.random() * 3); // 額外 0-2 次翻轉
+        const totalRotations = baseRotations + extraRotations;
+        const finalAngle = isHeads ? totalRotations * 360 : totalRotations * 360 + 180;
+        
+        // 應用動畫
+        coin.style.animationDuration = flipDuration + 'ms';
+        coin.style.transform = `rotateY(${finalAngle}deg)`;
+        coin.classList.add('flip-animation');
+        
+        setTimeout(() => {
+            coin.classList.remove('flip-animation');
+            
+            flipButton.disabled = false;
+            flipButton.textContent = 'Flip Coin';
+            isFlipping = false;
+        }, flipDuration);
+    }
+</script>
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2025
+     MC Chung 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

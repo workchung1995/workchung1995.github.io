@@ -2,160 +2,160 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/tw/authors/</loc>
+    <loc>http://localhost:54831/tw/authors/</loc>
     <lastmod>2024-02-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/authors/"
+                href="http://localhost:54831/authors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
-                href="https://example.com/tw/authors/"
+                href="http://localhost:54831/tw/authors/"
                 />
   </url><url>
-    <loc>https://example.com/tw/authors/mc-chung/</loc>
+    <loc>http://localhost:54831/tw/</loc>
     <lastmod>2024-02-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/authors/mc-chung/"
+                href="http://localhost:54831/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
-                href="https://example.com/tw/authors/mc-chung/"
+                href="http://localhost:54831/tw/"
                 />
   </url><url>
-    <loc>https://example.com/tw/</loc>
+    <loc>http://localhost:54831/tw/authors/mc-chung/</loc>
     <lastmod>2024-02-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/"
+                href="http://localhost:54831/authors/mc-chung/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
-                href="https://example.com/tw/"
+                href="http://localhost:54831/tw/authors/mc-chung/"
                 />
   </url><url>
-    <loc>https://example.com/tw/posts/</loc>
+    <loc>http://localhost:54831/tw/posts/</loc>
     <lastmod>2024-02-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/posts/"
+                href="http://localhost:54831/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
-                href="https://example.com/tw/posts/"
+                href="http://localhost:54831/tw/posts/"
                 />
   </url><url>
-    <loc>https://example.com/tw/series/</loc>
+    <loc>http://localhost:54831/tw/series/</loc>
     <lastmod>2024-02-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/series/"
+                href="http://localhost:54831/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
-                href="https://example.com/tw/series/"
+                href="http://localhost:54831/tw/series/"
                 />
   </url><url>
-    <loc>https://example.com/tw/series/%E5%AF%A6%E7%BF%92%E8%AA%B2/</loc>
+    <loc>http://localhost:54831/tw/series/%E5%AF%A6%E7%BF%92%E8%AA%B2/</loc>
     <lastmod>2024-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tw/posts/econometrics/</loc>
+    <loc>http://localhost:54831/tw/posts/econometrics/</loc>
     <lastmod>2024-02-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/posts/econometrics/"
+                href="http://localhost:54831/posts/econometrics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
-                href="https://example.com/tw/posts/econometrics/"
+                href="http://localhost:54831/tw/posts/econometrics/"
                 />
   </url><url>
-    <loc>https://example.com/tw/tools/</loc>
+    <loc>http://localhost:54831/tw/tools/</loc>
     <lastmod>2024-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/tools/"
+                href="http://localhost:54831/tools/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
-                href="https://example.com/tw/tools/"
+                href="http://localhost:54831/tw/tools/"
                 />
   </url><url>
-    <loc>https://example.com/tw/tools/arrangeseat/</loc>
+    <loc>http://localhost:54831/tw/tools/arrangeseat/</loc>
     <lastmod>2024-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/tools/arrangeseat/"
+                href="http://localhost:54831/tools/arrangeseat/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
-                href="https://example.com/tw/tools/arrangeseat/"
+                href="http://localhost:54831/tw/tools/arrangeseat/"
                 />
   </url><url>
-    <loc>https://example.com/tw/about/</loc>
+    <loc>http://localhost:54831/tw/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/about/"
+                href="http://localhost:54831/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
-                href="https://example.com/tw/about/"
+                href="http://localhost:54831/tw/about/"
                 />
   </url><url>
-    <loc>https://example.com/tw/categories/</loc>
+    <loc>http://localhost:54831/tw/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/categories/"
+                href="http://localhost:54831/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
-                href="https://example.com/tw/categories/"
+                href="http://localhost:54831/tw/categories/"
                 />
   </url><url>
-    <loc>https://example.com/tw/tags/</loc>
+    <loc>http://localhost:54831/tw/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/tags/"
+                href="http://localhost:54831/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
-                href="https://example.com/tw/tags/"
+                href="http://localhost:54831/tw/tags/"
                 />
   </url><url>
-    <loc>https://example.com/tw/contact/</loc>
+    <loc>http://localhost:54831/tw/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/contact/"
+                href="http://localhost:54831/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
-                href="https://example.com/tw/contact/"
+                href="http://localhost:54831/tw/contact/"
                 />
   </url>
 </urlset>
